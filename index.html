@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body style="background-image: url('images/background.png'); background-position: center top;">
+		<div id="header" style="background-image: url('images/headerbackground.jpg');">
+		
+			<div id="Menu" class="menu">
+				<a href="#" onclick="openNav()">&#9776; Menu</a>
+			</div>
+
+			<div id ="title">
+				Thorn Studios
+			</div>
+			
+		</div>
+		<div id="theleftsideNav" class="leftsideNav">
+			<a href="#" class="closebutton" onclick="closeNav()">&times;</a>
+			
+			<a href="index.html">Home</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="services.html">Services</a>
+		</div>
+		<div id="therightsideNav" class="rightsideNav">
+			<div id="contact">
+				<span style="color: #818181; font-size: 35px; text-decoration: underline;">Contact Me</span>
+				<form action="mailto:benjamin.t.harrison24@gmail.com" method="POST" enctype="multipart/form-data" id="contactform">
+				Name: <br>
+				<input type="text" name="name"><br>
+				E-mail: <br>
+				<input type="text" name="mail"><br>
+				Message: <br>
+				<textarea id="contactMessage" class="text" cols="30" rows="20" name="contactMessage"></textarea><br><br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+				</form>
+			</div>
+		</div>
+		<div id="mainBody">
+			index
+		</div>
+		
+		<div id="footer">
+			footer
+		</div>
+		
+
+		<script>
+		function openNav()
+		{
+			document.getElementById("theleftsideNav").style.height = "100%";
+			document.getElementById("therightsideNav").style.height = "100%";
+		}
+		function closeNav()
+		{
+			document.getElementById("theleftsideNav").style.height = "0";
+			document.getElementById("therightsideNav").style.height = "0";
+		}
+		</script>
+	</body>
+</html>
