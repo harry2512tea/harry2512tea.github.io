@@ -102,13 +102,21 @@
 	color: white;
 }
 
-#fcontainer
+.fcontainer
 {
-	width: 25%;
+	width: 30%;
 	float: left;
 	margin-right: 3rem;
-	border-style: solid;
-	border-color: white;
+	font-style: italic;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.fcontainer a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
 }
 #contact
 {
