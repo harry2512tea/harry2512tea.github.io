@@ -92,12 +92,24 @@
 	height: 8rem;
 	background-color: #2e2e2e;
 	border-style: solid;
+	border-color: black;
 	border-width: 5px 5px 0px 5px;
 	border-radius: 40px 40px 0px 0px;
 	margin-top: 2rem;
 	padding: 2%;
+	
+	font-size: 1rem;
+	color: white;
 }
 
+#fcontainer
+{
+	width: 25%;
+	float: left;
+	margin-right: 3rem;
+	border-style: solid;
+	border-color: white;
+}
 #contact
 {
 	color: #818181;
