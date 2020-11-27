@@ -79,36 +79,39 @@
 				</div>
 			</div>
 			<br>
+			<div>
+				<span style="font-style: italic; text-decoration: underline; font-size: 3rem;">Previous Builds</span>
+			</div>
 			<div id ="folders">
 				<div id="builds">
-					<a href="#" onclick="openFolder('build1')">
+					<a href="#!" onclick="openFolder('build1')">
 					<img src="images/colosseum/4.png" class="buildimage";>
 					</a>
 				</div>
 				<div id="builds">
-					<a href="#" onclick="openFolder('build2')">
+					<a href="#!" onclick="openFolder('build2')">
 					<img src="images/tree/4.png" class="buildimage";>
 					</a>
 				</div>
 				<div id="builds">
-					<a href="#" onclick="openFolder('build3')">
+					<a href="#!" onclick="openFolder('build3')">
 					<img src="images/volcano/7.png" class="buildimage";>
 					</a>
 				</div>
 				<div id="builds">
-					<a href="#" onclick="openFolder('build4')">
+					<a href="#!" onclick="openFolder('build4')">
 					<img src="images/castle/5.png" class="buildimage";>
 					</a>
 				</div>
 				<div id="builds">
-					<a href="#" onclick="openFolder('build5')">
+					<a href="#!" onclick="openFolder('build5')">
 					<img src="images/buhub/19.png" class="buildimage";>
 					</a>
 				</div>
 			</div>
 			<div id="build1" class="build1">
 				<div style="width: 100%;">
-					<a href="#" onclick="closeFolder('build1')">Close</a><br><br>
+					<a href="#!" onclick="closeFolder('build1')">Close</a><br><br>
 				</div>
 				<div id="builds">
 					<img src="images/colosseum/1.png" width="100%" height="100%">
@@ -131,7 +134,7 @@
 			</div>
 			<div id="build2" class="build2">
 				<div style="width: 100%;">
-					<a href="#" onclick="closeFolder('build2')">Close</a><br><br>
+					<a href="#!" onclick="closeFolder('build2')">Close</a><br><br>
 				</div>
 				<div id="builds">
 					<img src="images/tree/1.png" width="100%" height="100%">
@@ -157,7 +160,7 @@
 			</div>
 			<div id="build3" class="build3">
 				<div style="width: 100%;">
-					<a href="#" onclick="closeFolder('build3')">Close</a><br><br>
+					<a href="#!" onclick="closeFolder('build3')">Close</a><br><br>
 				</div>
 				<div id="builds">
 					<img src="images/volcano/1.png" width="100%" height="100%">
@@ -183,7 +186,7 @@
 			</div>
 			<div id="build4" class="build4">
 				<div style="width: 100%;">
-					<a href="#" onclick="closeFolder('build4')">Close</a><br><br>
+					<a href="#!" onclick="closeFolder('build4')">Close</a><br><br>
 				</div>
 				<div id="builds">
 					<img src="images/castle/1.png" width="100%" height="100%">
@@ -239,7 +242,7 @@
 			</div>
 			<div id="build5" class="build5">
 				<div style="width: 100%;">
-					<a href="#" onclick="closeFolder('build5')">Close</a><br><br>
+					<a href="#!" onclick="closeFolder('build5')">Close</a><br><br>
 				</div>
 				<div id="builds">
 					<img src="images/buhub/1.png" width="100%" height="100%">
@@ -341,21 +344,21 @@
                 document.getElementById("theleftsideNav").style.left = "-25%";
                 document.getElementById("therightsideNav").style.right = "-25%";
             }
-var slideIndex = 0;
-showSlides();
+			var slideIndex = 0;
+			showSlides();
 
-function showSlides() {
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	for (i = 0; i < slides.length; i++)
-	{
-		slides[i].style.display = "none";
-	}
-	slideIndex++;
-	if (slideIndex > slides.length) {slideIndex = 1}
-	slides[slideIndex-1].style.display = "block";
-	setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				for (i = 0; i < slides.length; i++)
+				{
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}
+				slides[slideIndex-1].style.display = "block";
+				setTimeout(showSlides, 5000); // Change image every 2 seconds
+			}
 		</script>
 	</body>
 </html>
