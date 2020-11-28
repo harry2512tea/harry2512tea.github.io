@@ -16,7 +16,7 @@
 			
 			var frameNum = 0;
 			var x = 0;
-			var animSpeed = 10
+			var animSpeed = 18
 
 			function load()
 			{
@@ -29,21 +29,18 @@
 				ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 				var frameWidth = sheet.width / 8;
 				var frameHeight = sheet.height;
-				var imagewidth = frameWidth * frameNum;
-				ctx.drawImage(sheet, imageWidth, 0, frameWidth, frameHeight, 0, 0, frameWidth, frameHeight);
-				if (frameNum == 7)
-					{
-						frameNum == 0;
-					}
-				else if (frameNum < 7)
-					{
-						frameNum++
-					}
+				var imageWidth = frameWidth * frameNum;
+                ctx.drawImage(sheet, imageWidth, 0, frameWidth, frameHeight, 95, 81, frameWidth, frameHeight);
+				x++
+			if (x % animSpeed == 0)
+				{
+					frameNum = (frameNum + 1) % 8;
+				}
+				window.requestAnimationFrame(function() {draw(ctx);});
 			}
 			
 			function main()
 			{
-
 
 				var canvas = document.getElementById("canvas");
 				
@@ -55,8 +52,6 @@
 				var ctx = canvas.getContext("2d")
 				
 				draw(ctx);
-				
-				window.requestAnimationFrame(function() {draw(ctx);});
 			}
 
 			window.onload = main;
