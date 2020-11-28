@@ -2,6 +2,66 @@
 	<head>
 		<title>Home</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script>
+            function openNav()
+            {
+                document.getElementById("theleftsideNav").style.left = "0";
+                document.getElementById("therightsideNav").style.right = "0";
+            }
+            function closeNav()
+            {
+                document.getElementById("theleftsideNav").style.left = "-25%";
+                document.getElementById("therightsideNav").style.right = "-25%";
+            }
+			
+			var frameNum = 0;
+			var x = 0;
+			var animSpeed = 10
+
+			function load()
+			{
+				sheet = new Image();
+				sheet.src = "images/skinsheet.png"
+			}
+			function draw(ctx)
+			{
+				ctx.fillStyle = "gray";
+				ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+				var frameWidth = sheet.width / 8;
+				var frameHeight = sheet.height;
+				var imagewidth = frameWidth * frameNum;
+				ctx.drawImage(sheet, imageWidth, 0, frameWidth, frameHeight, 0, 0, frameWidth, frameHeight);
+				if (frameNum == 7)
+					{
+						frameNum == 0;
+					}
+				else if (frameNum < 7)
+					{
+						frameNum++
+					}
+			}
+			
+			function main()
+			{
+
+
+				var canvas = document.getElementById("canvas");
+				
+				canvas.width = 400;
+				canvas.height = 600;
+				
+				load();
+				
+				var ctx = canvas.getContext("2d")
+				
+				draw(ctx);
+				
+				window.requestAnimationFrame(function() {draw(ctx);});
+			}
+
+			window.onload = main;
+			window.addEventListener("keydown", keydown);
+        </script>
 	</head>
 	
 	<body style="background-image: url('images/background.png');">
@@ -40,10 +100,7 @@
 		</div>
 		<div id="mainBody">
 			<div id="skin" style="float: right">
-				<figure>
-					<img src="images/Skin.png">
-					<figcaption>My in-game skin<br>CMDR_Thire</figcaption>
-				</figure>
+				<canvas id="canvas" style="background: gray"></canvas>
 			</div>
 			<span style="font-size: 3rem; font-weight: bold; text-decoration: underline;">Hi! I'm Thorn</span> <br><br>
 			Welcome to my portfolio. <br>
@@ -72,17 +129,5 @@
 		</div>
 
 
-		<script>
-            function openNav()
-            {
-                document.getElementById("theleftsideNav").style.left = "0";
-                document.getElementById("therightsideNav").style.right = "0";
-            }
-            function closeNav()
-            {
-                document.getElementById("theleftsideNav").style.left = "-25%";
-                document.getElementById("therightsideNav").style.right = "-25%";
-            }
-        </script>
 	</body>
 </html>
