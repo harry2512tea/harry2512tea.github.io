@@ -34,7 +34,7 @@ body
 }
 #title
 {
-	float: right;
+	float: left;
 	width: 45%;
 	height: 3rem;
 	font-size: 3rem;

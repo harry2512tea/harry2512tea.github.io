@@ -78,12 +78,45 @@
 			</div>
 		</div>
 		<div id="mainBody">
-			<div id ="title">
+			<div id ="title1">
 				Services
 			</div>
-			<div id="structure">
+			<div class="services" id="services">
+				<div id="build">
+					Landscape Quote
+					<a href="#!" onclick="openQuote('landscape')">
+					<img src="images/landscape.png" class="serviceImage";>
+					</a>
+				</div>
+				<div id="build">
+					Building Quote
+					<a href="#!" onclick="openQuote('structure')">
+					<img src="images/tree/5.png" class="serviceImage";>
+					</a>
+				</div>
+				<div id="build">
+					Map Quote
+					<a href="#!" onclick="openQuote('map')">
+					<img src="images/castle/5.png" class="serviceImage";>
+					</a>
+				</div>
 			</div>
-			<div id="landscape">
+			<div id="quotes">
+				<div id = "landscape" class="landscape">
+					<a href="#" onclick="closeQuote('landscape')">
+					Close
+					</a>
+				</div>
+				<div id = "structure" class="structure">
+					<a href="#" onclick="closeQuote('structure')">
+					Close
+					</a>
+				</div>
+				<div id = "map" class="structure">
+					<a href="#" onclick="closeQuote('map')">
+					Close
+					</a>
+				</div>
 			</div>
 			
 			
@@ -118,6 +151,18 @@
                 document.getElementById("theleftsideNav").style.left = "-25%";
                 document.getElementById("therightsideNav").style.right = "-25%";
             }
+			function openQuote(buildType)
+			{
+				document.getElementById("services").style.height = "0";
+				document.getElementById("quotes").style.height = "45rem";
+				document.getElementById(buildType).style.height = "40rem";
+			}
+			function closeQuote(buildType)
+			{
+				document.getElementById("services").style.height = "30rem";
+				document.getElementById("quotes").style.height = "0";
+				document.getElementById(buildType).style.height = "0";
+			}
 		</script>
 	</body>
 </html>
