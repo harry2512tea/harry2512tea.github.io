@@ -1,0 +1,10 @@
+#skin
+{
+	float: right;
+	border-style: solid;
+	border-color: white;
+	border-radius: 25px;
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
