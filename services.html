@@ -79,7 +79,12 @@
 		</div>
 		<div id="mainBody">
 			<div id ="title1">
-				Services
+				Services<br>
+				<div id="calculatorHelp">
+					<br>
+					use these quote calculators to gain a rough estimate of the cost of commission. These calculators are not a guarantee, and each build will have a unique cost.<br>
+					In order to get the actual price, send an E-mail to <span style="color: aqua; font-weight: bold;">s5313363@bournemouth.ac.uk</span> with the dimensions of the build, estimated complexity (on a scale of 1-10) and a screenshot of the calculator result. A form template can be found below.
+				</div>
 			</div>
 			<div class="services" id="services">
 				<div id="build">
@@ -103,19 +108,73 @@
 			</div>
 			<div id="quotes">
 				<div id = "landscape" class="landscape">
-					<a href="#" onclick="closeQuote('landscape')">
+					<a href="#!" onclick="closeQuote('landscape')">
 					Close
-					</a>
+					</a><br>
+					<div id="quoteForm">
+						<div class="formBox">
+							World Size<br>
+							<input type="range" min="100" max="1000" value="100" step="10" class="size" id="landWorldSize"><br>
+							<div id="landSizeOutput" class="sizeOutput">100</div>
+							x
+							<div id="landSizeOutput2" class="sizeOutput2">100</div>
+						</div><br>
+						<div class="formBox">
+							Terrain Complexity<br>
+							<input type="range" min="1" max="10" value="1" class="complexity" id="landComplexity">
+							<div id="landComplexityOutput">1</div>
+						</div><br>
+						<div class="formBox">
+							Estimated Cost:<br>
+							£<div id="landTotalCost" class="sizeOutput"></div>
+						</div>
+					</div>
 				</div>
 				<div id = "structure" class="structure">
-					<a href="#" onclick="closeQuote('structure')">
+					<a href="#!" onclick="closeQuote('structure')">
 					Close
-					</a>
+					</a><br>
+					<div id="quoteForm">
+						<div class="formBox">
+							Build Dimensions<br>
+							<input type="range" min="100" max="1000" value="100" class="size" id="structWorldSize"><br>
+							<div id="structSizeOutput" class="sizeOutput">100</div>
+							x
+							<div id="structSizeOutput2" class="sizeOutput2">100</div>
+						</div><br>
+						<div class="formBox">
+							Build Complexity<br>
+							<input type="range" min="1" max="10" value="1" class="complexity" id="structComplexity">
+							<div id="structComplexityOutput">1</div>
+						</div><br>
+						<div class="formBox">
+							Estimated Cost:<br>
+							£<div id="structTotalCost" class="sizeOutput"></div>
+						</div>
+					</div>
 				</div>
 				<div id = "map" class="structure">
-					<a href="#" onclick="closeQuote('map')">
+					<a href="#!" onclick="closeQuote('map')">
 					Close
-					</a>
+					</a><br>
+					<div id="quoteForm">
+						<div class="formBox">
+							Map Size<br>
+							<input type="range" min="100" max="1000" value="100" class="size" id="mapWorldSize"><br>
+							<div id="mapSizeOutput" class="sizeOutput">100</div>
+							x
+							<div id="mapSizeOutput2" class="sizeOutput2">100</div>
+						</div><br>
+						<div class="formBox">
+							Build Complexity<br>
+							<input type="range" min="1" max="10" value="1" class="complexity" id="mapComplexity">
+							<div id="mapComplexityOutput">1</div>
+						</div><br>
+						<div class="formBox">
+						Estimated Cost:<br>
+						£<div id="mapTotalCost" class="sizeOutput"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 			
@@ -163,6 +222,143 @@
 				document.getElementById("quotes").style.height = "0";
 				document.getElementById(buildType).style.height = "0";
 			}
+			var landSize = document.getElementById("landWorldSize");
+			var landSizeOut = document.getElementById("landSizeOutput");
+			var landSizeOut2 = document.getElementById("landSizeOutput2");
+			var landComplexity = document.getElementById("landComplexity");
+			var landComplexityOut = document.getElementById("landComplexityOutput");
+			var landTotalCostOut = document.getElementById("landTotalCost");
+			
+			var structSize = document.getElementById("structWorldSize");
+			var structSizeOut = document.getElementById("structSizeOutput");
+			var structSizeOut2 = document.getElementById("structSizeOutput2");
+			var structComplexity = document.getElementById("structComplexity");
+			var structComplexityOut = document.getElementById("structComplexityOutput");
+			var structTotalCostOut = document.getElementById("structTotalCost");
+			
+			var mapSize = document.getElementById("mapWorldSize");
+			var mapSizeOut = document.getElementById("mapSizeOutput");
+			var mapSizeOut2 = document.getElementById("mapSizeOutput2");
+			var mapComplexity = document.getElementById("mapComplexity");
+			var mapComplexityOut = document.getElementById("mapComplexityOutput");
+			var mapTotalCostOut = document.getElementById("mapTotalCost");
+			
+			var landPriceBase =  10;
+			var landPriceExtra = 0;
+			var landSizeCalc = 100;
+			var landSizeCost = 1;
+			var landComplexityCalc = 1;
+			var landComplexityCost = 1;
+			var totalLandPrice = 15.5;
+			
+			var structPriceBase =  10;
+			var structPriceExtra = 0;
+			var structSizeCalc = 100;
+			var structSizeCost = 1;
+			var structComplexityCalc = 1;
+			var structComplexityCost = 1;
+			var totalStructPrice = 15.5;
+			
+			var mapPriceBase =  10;
+			var mapPriceExtra = 0;
+			var mapSizeCalc = 100;
+			var mapSizeCost = 1;
+			var mapComplexityCalc = 1;
+			var mapComplexityCost = 1;
+			var totalMapPrice = 15.5;
+			
+			landSizeOut.innerHTML = landSize.value;
+			landSizeOut2.innerHTML = landSize.value;
+			landComplexityOut.innerHTML = landComplexity.value;
+			landTotalCostOut.innerHTML = totalLandPrice;
+			
+			structSizeOut.innerHTML = structSize.value;
+			structSizeOut2.innerHTML = structSize.value;
+			structComplexityOut.innerHTML = structComplexity.value;
+			structTotalCostOut.innerHTML = totalStructPrice;
+			
+			mapSizeOut.innerHTML = mapSize.value;
+			mapSizeOut2.innerHTML = mapSize.value;
+			mapComplexityOut.innerHTML = mapComplexity.value;
+			mapTotalCostOut.innerHTML = totalMapPrice;
+
+			landSize.oninput = function()
+			{
+				landSizeOut.innerHTML = this.value;
+				landSizeOut2.innerHTML = this.value;
+				landSizeCalc = this.value;
+				landPricing();
+			}
+			
+			landComplexity.oninput = function()
+			{
+				landComplexityOut.innerHTML = this.value;
+				landComplexityCalc = this.value;
+				landPricing();
+			}
+			
+			function landPricing()
+			{
+				landSizeCost = (landSizeCalc / 20);
+				landComplexityCost = (landComplexityCalc / 10) + 1;
+				landPriceExtra = landSizeCost * landComplexityCost;
+				totalLandPrice = landPriceBase + landPriceExtra;
+				totalLandPrice = Math.round(totalLandPrice * 100) / 100;
+				landTotalCostOut.innerHTML = totalLandPrice;
+				
+			}
+			structSize.oninput = function()
+			{
+				structSizeOut.innerHTML = this.value;
+				structSizeOut2.innerHTML = this.value;
+				structSizeCalc = this.value;
+				structPricing();
+			}
+			
+			structComplexity.oninput = function()
+			{
+				structComplexityOut.innerHTML = this.value;
+				structComplexityCalc = this.value;
+				structPricing();
+			}
+			
+			function structPricing()
+			{
+				structSizeCost = (structSizeCalc / 20);
+				structComplexityCost = (structComplexityCalc / 10) + 1;
+				structPriceExtra = structSizeCost * structComplexityCost;
+				totalStructPrice = structPriceBase + structPriceExtra;
+				totalStructPrice = Math.round(totalStructPrice * 100) / 100;
+				structTotalCostOut.innerHTML = totalStructPrice;
+				
+			}
+			mapSize.oninput = function()
+			{
+				mapSizeOut.innerHTML = this.value;
+				mapSizeOut2.innerHTML = this.value;
+				mapSizeCalc = this.value;
+				mapPricing();
+			}
+			
+			mapComplexity.oninput = function()
+			{
+				mapComplexityOut.innerHTML = this.value;
+				mapComplexityCalc = this.value;
+				mapPricing();
+			}
+			
+			function mapPricing()
+			{
+				mapSizeCost = (mapSizeCalc / 20);
+				mapComplexityCost = (mapComplexityCalc / 10) + 1;
+				mapPriceExtra = mapSizeCost * mapComplexityCost;
+				totalMapPrice = mapPriceBase + mapPriceExtra;
+				totalMapPrice = Math.round(totalMapPrice * 100) / 100;
+				mapTotalCostOut.innerHTML = totalMapPrice;
+				
+			}
+
+			
 		</script>
 	</body>
 </html>

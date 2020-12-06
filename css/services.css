@@ -1,20 +1,30 @@
 #title1
 {
 	float: left;
-	width: 45%;
-	height: 3rem;
+	width: 100%;
+	height: 20rem;
 	font-size: 3rem;
-	text-align: left;
+	text-align: center;
 	margin-right: 5%;
-	margin-bottom: 3%;
+	margin-bottom: 1%;
 	text-decoration: underline;
 	color: #00e0d9;
 	font-weight: bold;
-	//font-family: "Brush Script MT";
 	font-family: impact;
 	text-shadow: 3px 3px 5px black;
 }
 
+#calculatorHelp
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: serif;
+	color: white;
+	font-weight: normal;
+}
 #build
 {
 	width: 30%;
@@ -31,7 +41,7 @@
 {
 	float: left;
 	width: 100%;
-	height: 30rem;
+	height: auto;
 	overflow: hidden;
 	transition: height 1000ms;
 }
@@ -57,35 +67,72 @@
 	width: 100%;
 	height: 0;
 	overflow: hidden;
-	border-style: solid;
-	border-color: blue;
 	transition: height 1000ms;
 }
+#quoteform
+{
+	width: 90%;
+	height: 30rem;
+	border-style: solid;
+	border-color: aqua;
+	border-radius: 25px;
+	padding: 2%;
+	margin: 3%;
+}
+.formBox
+{
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	border-style: solid;
+	overflow: hidden;
+	border-radius: 25px;
+	background-color: black;
+	text-align: center;
+}
+
+.sizeOutput, .sizeOutput2
+{
+	text-align: center;
+	display: inline;
+}
+
 .landscape
 {
+	width: 100%;
 	height: 0;
 	overflow: hidden;
+	transition: height 1000ms;
 }
+
 .landscape a
 {
 	color: white;
 	text-decoration: none;
 }
+
 .structure
 {
+	width: 100%;
 	height: 0;
 	overflow: hidden;
+	transition: height 1000ms;
 }
+
 .structure a
 {
 	color: white;
 	text-decoration: none;
 }
+
 .map
 {
+	width: 100%;
 	height: 0;
 	overflow: hidden;
+	transition: height 1000ms;
 }
+
 .map a
 {
 	color: white;
