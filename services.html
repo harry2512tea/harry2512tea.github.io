@@ -108,8 +108,8 @@
 			</div>
 			<div id="quotes">
 				<div id = "landscape" class="landscape">
-					<a href="#!" onclick="closeQuote('landscape')">
-					Close
+					<a href="#!" style="font-size: 3rem;" onclick="closeQuote('landscape')">
+					&times;
 					</a><br>
 					<div id="quoteForm">
 						<div class="formBox">
@@ -131,8 +131,8 @@
 					</div>
 				</div>
 				<div id = "structure" class="structure">
-					<a href="#!" onclick="closeQuote('structure')">
-					Close
+					<a href="#!" style="font-size: 3rem;" onclick="closeQuote('structure')">
+					&times;
 					</a><br>
 					<div id="quoteForm">
 						<div class="formBox">
@@ -154,8 +154,8 @@
 					</div>
 				</div>
 				<div id = "map" class="structure">
-					<a href="#!" onclick="closeQuote('map')">
-					Close
+					<a href="#!" style="font-size: 3rem;" onclick="closeQuote('map')">
+					&times;
 					</a><br>
 					<div id="quoteForm">
 						<div class="formBox">
@@ -249,7 +249,7 @@
 			var landSizeCost = 1;
 			var landComplexityCalc = 1;
 			var landComplexityCost = 1;
-			var totalLandPrice = 15.5;
+			var totalLandPrice = 15.25;
 			
 			var structPriceBase =  10;
 			var structPriceExtra = 0;
@@ -265,7 +265,7 @@
 			var mapSizeCost = 1;
 			var mapComplexityCalc = 1;
 			var mapComplexityCost = 1;
-			var totalMapPrice = 15.5;
+			var totalMapPrice = 21;
 			
 			landSizeOut.innerHTML = landSize.value;
 			landSizeOut2.innerHTML = landSize.value;
@@ -300,7 +300,7 @@
 			function landPricing()
 			{
 				landSizeCost = (landSizeCalc / 20);
-				landComplexityCost = (landComplexityCalc / 10) + 1;
+				landComplexityCost = (landComplexityCalc / 20) + 1;
 				landPriceExtra = landSizeCost * landComplexityCost;
 				totalLandPrice = landPriceBase + landPriceExtra;
 				totalLandPrice = Math.round(totalLandPrice * 100) / 100;
@@ -349,7 +349,7 @@
 			
 			function mapPricing()
 			{
-				mapSizeCost = (mapSizeCalc / 20);
+				mapSizeCost = (mapSizeCalc / 10);
 				mapComplexityCost = (mapComplexityCalc / 10) + 1;
 				mapPriceExtra = mapSizeCost * mapComplexityCost;
 				totalMapPrice = mapPriceBase + mapPriceExtra;

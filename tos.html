@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>TOS</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script>
+            function openNav()
+            {
+                document.getElementById("theleftsideNav").style.left = "0";
+                document.getElementById("therightsideNav").style.right = "0";
+            }
+            function closeNav()
+            {
+                document.getElementById("theleftsideNav").style.left = "-25%";
+                document.getElementById("therightsideNav").style.right = "-25%";
+            }
+        </script>
+	</head>
+	
+	<body style="background-image: url('images/background.png');">
+		<div class="snowflakes" aria-hidden="true">
+			<div class="snowflake">
+			  ❅
+			</div>
+			<div class="snowflake">
+			  ❆
+			</div>
+			<div class="snowflake">
+			  ❅
+			</div>
+			<div class="snowflake">
+			  ❆
+			</div>
+			<div class="snowflake">
+			  ❅
+			</div>
+			<div class="snowflake">
+			  ❆
+			</div>
+			<div class="snowflake">
+				❅
+			</div>
+			<div class="snowflake">
+				❆
+			</div>
+			<div class="snowflake">
+				❅
+			</div>
+			<div class="snowflake">
+				❆
+			</div>
+			<div class="snowflake">
+				❅
+			</div>
+			<div class="snowflake">
+				❆
+			</div>
+		</div>
+		<div id="header" style="background-image: url('images/headerbackground.jpg');">
+		
+			<div id="Menu" class="menu">
+				<a href="#!" onclick="openNav()">&#9776; Menu</a>
+			</div>
+
+			<div id ="title">
+				Thorn Studios
+			</div>
+			
+		</div>
+		<div id="theleftsideNav" class="leftsideNav">
+			<a href="#!" class="closebutton" onclick="closeNav()">&times;</a>
+			
+			<a href="index.html">Home</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="services.html">Services</a>
+		</div>
+		<div id="therightsideNav" class="rightsideNav">
+			<div id="contact">
+				<span style="color: #818181; font-size: 35px; text-decoration: underline;">Contact Me</span>
+				<form action="mailto:benjamin.t.harrison24@gmail.com" method="POST" enctype="multipart/form-data" id="contactform">
+				Name: <br>
+				<input type="text" name="name"><br>
+				E-mail: <br>
+				<input type="text" name="mail"><br>
+				Message: <br>
+				<textarea id="contactMessage" class="text" cols="30" rows="20" name="contactMessage"></textarea><br><br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+				</form>
+			</div>
+		</div>
+		<div id="mainBody">
+		</div>
+		
+		<div id="footer">
+			<div id="fcontainer" class="fcontainer">
+				All images on this site are owned and created by me.<br>
+				Any complaints are to be sent via the contact me form, or the E-mail following in this footer.
+			</div>
+			<div id="fcontainer" class="fcontainer">
+				<a href="gallery.html">Gallery</a><br>
+				<a href="services.html">Services</a><br>
+				<a href="faq.html">FAQ</a><br>
+				<a href="tos.html">TOS</a><br>
+			
+			</div>
+			<div id="fcontainer" class="fcontainer">
+				contact me here if the form doesn't work: <br>
+				s5313363@bournemouth.ac.uk
+			</div>
+		</div>
+
+
+	</body>
+</html>
