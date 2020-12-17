@@ -72,7 +72,7 @@
 #quoteForm
 {
 	width: 90%;
-	height: 30rem;
+	height: 35rem;
 	border-style: solid;
 	border-color: aqua;
 	border-radius: 25px;
@@ -91,6 +91,11 @@
 	border-radius: 25px;
 	background-color: black;
 	text-align: center;
+}
+
+.size, .complexity
+{
+	width: 90%;
 }
 
 .sizeOutput, .sizeOutput2
