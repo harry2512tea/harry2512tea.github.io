@@ -8,5 +8,6 @@ var searchData=
   ['input_5',['input',['../class_thomas_the_tank_1_1_core.html#a252dbf24a246fb1f5269cbf0d8d216bc',1,'ThomasTheTank::Core']]],
   ['input_6',['Input',['../struct_thomas_the_tank_1_1_input.html',1,'ThomasTheTank']]],
   ['input_2ecpp_7',['Input.cpp',['../_input_8cpp.html',1,'']]],
-  ['input_2eh_8',['Input.h',['../_input_8h.html',1,'']]]
+  ['input_2eh_8',['Input.h',['../_input_8h.html',1,'']]],
+  ['insert_9',['INSERT',['../struct_thomas_the_tank_1_1_keys.html#a4dfa3842d7cbecdc87b5cf0578c77f97',1,'ThomasTheTank::Keys']]]
 ];

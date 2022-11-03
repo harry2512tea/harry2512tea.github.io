@@ -92,22 +92,120 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc3dd7dc8cda8d50b4b0ddf22afaa9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cf502ebc8b43f8fd7a83243ec9ec57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#ad7cf502ebc8b43f8fd7a83243ec9ec57">getKey</a> (SDL_Keycode code)</td></tr>
 <tr class="separator:ad7cf502ebc8b43f8fd7a83243ec9ec57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0063b405696c07464faa8b5a43de5939"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a0063b405696c07464faa8b5a43de5939">getButton</a> (int _button)</td></tr>
+<tr class="separator:a0063b405696c07464faa8b5a43de5939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e291900ca07019c1f049ef709175eed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a6e291900ca07019c1f049ef709175eed">getButtonDown</a> (int _button)</td></tr>
+<tr class="separator:a6e291900ca07019c1f049ef709175eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebba08fd6505afcaa196d57b54ae261"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a4ebba08fd6505afcaa196d57b54ae261">getButtonUp</a> (int _button)</td></tr>
+<tr class="separator:a4ebba08fd6505afcaa196d57b54ae261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ae22ebfac516311e0d24653b8d585ba25"><td class="memItemLeft" align="right" valign="top">static std::list&lt; SDL_Keycode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#ae22ebfac516311e0d24653b8d585ba25">keys</a> = {}</td></tr>
+<tr class="memdesc:ae22ebfac516311e0d24653b8d585ba25"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all keys currently pressed.  <a href="struct_thomas_the_tank_1_1_input.html#ae22ebfac516311e0d24653b8d585ba25">More...</a><br /></td></tr>
 <tr class="separator:ae22ebfac516311e0d24653b8d585ba25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25bf7192afa31ba81fd597302acc69b7"><td class="memItemLeft" align="right" valign="top">static std::list&lt; SDL_Keycode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a25bf7192afa31ba81fd597302acc69b7">keyDown</a> = {}</td></tr>
+<tr class="memdesc:a25bf7192afa31ba81fd597302acc69b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all keys pressed this frame.  <a href="struct_thomas_the_tank_1_1_input.html#a25bf7192afa31ba81fd597302acc69b7">More...</a><br /></td></tr>
 <tr class="separator:a25bf7192afa31ba81fd597302acc69b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e2986a2bd0b4d16c28b4c0a36d67ac5"><td class="memItemLeft" align="right" valign="top">static std::list&lt; SDL_Keycode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a1e2986a2bd0b4d16c28b4c0a36d67ac5">keyUp</a> = {}</td></tr>
+<tr class="memdesc:a1e2986a2bd0b4d16c28b4c0a36d67ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all keys released this frame.  <a href="struct_thomas_the_tank_1_1_input.html#a1e2986a2bd0b4d16c28b4c0a36d67ac5">More...</a><br /></td></tr>
 <tr class="separator:a1e2986a2bd0b4d16c28b4c0a36d67ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae94a16ade1b324693f4a2ff4ba134b"><td class="memItemLeft" align="right" valign="top">static std::list&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#afae94a16ade1b324693f4a2ff4ba134b">buttons</a> = {}</td></tr>
+<tr class="memdesc:afae94a16ade1b324693f4a2ff4ba134b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all buttons currently pressed.  <a href="struct_thomas_the_tank_1_1_input.html#afae94a16ade1b324693f4a2ff4ba134b">More...</a><br /></td></tr>
+<tr class="separator:afae94a16ade1b324693f4a2ff4ba134b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3c6bc6923416d64e30ea332777281d"><td class="memItemLeft" align="right" valign="top">static std::list&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a4e3c6bc6923416d64e30ea332777281d">buttonDown</a> = {}</td></tr>
+<tr class="memdesc:a4e3c6bc6923416d64e30ea332777281d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all buttons pressed this frame.  <a href="struct_thomas_the_tank_1_1_input.html#a4e3c6bc6923416d64e30ea332777281d">More...</a><br /></td></tr>
+<tr class="separator:a4e3c6bc6923416d64e30ea332777281d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819940ca37ddae8d9099dbbafc00712d"><td class="memItemLeft" align="right" valign="top">static std::list&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a819940ca37ddae8d9099dbbafc00712d">buttonUp</a> = {}</td></tr>
+<tr class="memdesc:a819940ca37ddae8d9099dbbafc00712d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all buttons released this frame.  <a href="struct_thomas_the_tank_1_1_input.html#a819940ca37ddae8d9099dbbafc00712d">More...</a><br /></td></tr>
+<tr class="separator:a819940ca37ddae8d9099dbbafc00712d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a4107254ac74f90d4f91e810d755b98c2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thomas_the_tank_1_1_input.html#a4107254ac74f90d4f91e810d755b98c2">Core</a></td></tr>
 <tr class="separator:a4107254ac74f90d4f91e810d755b98c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p ><a class="el" href="struct_thomas_the_tank_1_1_input.html">Input</a> manager class </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0063b405696c07464faa8b5a43de5939" name="a0063b405696c07464faa8b5a43de5939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0063b405696c07464faa8b5a43de5939">&#9670;&#160;</a></span>getButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ThomasTheTank::Input::getButton </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Check if specified button is currently pressed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">INT</td><td>_button button identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOL Current button state. </dd></dl>
+
+</div>
+</div>
+<a id="a6e291900ca07019c1f049ef709175eed" name="a6e291900ca07019c1f049ef709175eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e291900ca07019c1f049ef709175eed">&#9670;&#160;</a></span>getButtonDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ThomasTheTank::Input::getButtonDown </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Check if specified button was pressed between frames.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">INT</td><td>_button button identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOL Whether button was pressed. </dd></dl>
+
+</div>
+</div>
+<a id="a4ebba08fd6505afcaa196d57b54ae261" name="a4ebba08fd6505afcaa196d57b54ae261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebba08fd6505afcaa196d57b54ae261">&#9670;&#160;</a></span>getButtonUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ThomasTheTank::Input::getButtonUp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Check if specified button was released between frames.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">INT</td><td>_button button identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOL Whether button was released. </dd></dl>
+
+</div>
+</div>
 <a id="ad7cf502ebc8b43f8fd7a83243ec9ec57" name="ad7cf502ebc8b43f8fd7a83243ec9ec57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7cf502ebc8b43f8fd7a83243ec9ec57">&#9670;&#160;</a></span>getKey()</h2>
 
@@ -123,6 +221,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if specified key is currently pressed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SDL_Keycode</td><td>code Key identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOL Current key state. </dd></dl>
 
 </div>
 </div>
@@ -141,6 +247,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if specified key was pressed between frames.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SDL_Keycode</td><td>code Key identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOL Whether key was pressed. </dd></dl>
 
 </div>
 </div>
@@ -159,6 +273,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if specified key was released between frames.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SDL_Keycode</td><td>code Key identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOL Whether key was pressed. </dd></dl>
 
 </div>
 </div>
@@ -186,6 +308,78 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4e3c6bc6923416d64e30ea332777281d" name="a4e3c6bc6923416d64e30ea332777281d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3c6bc6923416d64e30ea332777281d">&#9670;&#160;</a></span>buttonDown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; int &gt; ThomasTheTank::Input::buttonDown = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of all buttons pressed this frame. </p>
+
+</div>
+</div>
+<a id="afae94a16ade1b324693f4a2ff4ba134b" name="afae94a16ade1b324693f4a2ff4ba134b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae94a16ade1b324693f4a2ff4ba134b">&#9670;&#160;</a></span>buttons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; int &gt; ThomasTheTank::Input::buttons = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of all buttons currently pressed. </p>
+
+</div>
+</div>
+<a id="a819940ca37ddae8d9099dbbafc00712d" name="a819940ca37ddae8d9099dbbafc00712d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819940ca37ddae8d9099dbbafc00712d">&#9670;&#160;</a></span>buttonUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; int &gt; ThomasTheTank::Input::buttonUp = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of all buttons released this frame. </p>
+
+</div>
+</div>
 <a id="a25bf7192afa31ba81fd597302acc69b7" name="a25bf7192afa31ba81fd597302acc69b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25bf7192afa31ba81fd597302acc69b7">&#9670;&#160;</a></span>keyDown</h2>
 
@@ -205,6 +399,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of all keys pressed this frame. </p>
 
 </div>
 </div>
@@ -228,6 +424,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of all keys currently pressed. </p>
+
 </div>
 </div>
 <a id="a1e2986a2bd0b4d16c28b4c0a36d67ac5" name="a1e2986a2bd0b4d16c28b4c0a36d67ac5"></a>
@@ -249,6 +447,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of all keys released this frame. </p>
 
 </div>
 </div>
