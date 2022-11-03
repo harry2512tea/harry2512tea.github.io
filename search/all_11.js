@@ -8,5 +8,6 @@ var searchData=
   ['rotate_5',['rotate',['../struct_thomas_the_tank_1_1_transform.html#ac69e24a8dd5cd682aad3ab18607a06e6',1,'ThomasTheTank::Transform']]],
   ['rotation_6',['rotation',['../struct_thomas_the_tank_1_1_transform.html#ac1fcb00d4ba10844aa56197e9a4d643c',1,'ThomasTheTank::Transform']]],
   ['rotationquat_7',['rotationQuat',['../struct_thomas_the_tank_1_1_transform.html#aa4af6ad677123f1f180fa5813c512ff8',1,'ThomasTheTank::Transform']]],
-  ['rshift_8',['RSHIFT',['../struct_thomas_the_tank_1_1_keys.html#aa67b2c06b102daf4a4911bb23dfc47ef',1,'ThomasTheTank::Keys']]]
+  ['rshift_8',['RSHIFT',['../struct_thomas_the_tank_1_1_keys.html#aa67b2c06b102daf4a4911bb23dfc47ef',1,'ThomasTheTank::Keys']]],
+  ['rsquarebracket_9',['RSQUAREBRACKET',['../struct_thomas_the_tank_1_1_keys.html#a8741b26c7238b1f11280bba842d89bfd',1,'ThomasTheTank::Keys']]]
 ];

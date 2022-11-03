@@ -12,5 +12,10 @@ var searchData=
   ['num_5f6_9',['NUM_6',['../struct_thomas_the_tank_1_1_keys.html#a938e5430b682782c56ab59eb5d612917',1,'ThomasTheTank::Keys']]],
   ['num_5f7_10',['NUM_7',['../struct_thomas_the_tank_1_1_keys.html#a18627569adc74758096b15d75b70c1c4',1,'ThomasTheTank::Keys']]],
   ['num_5f8_11',['NUM_8',['../struct_thomas_the_tank_1_1_keys.html#a85602bbc69b7639e213b420fd2660448',1,'ThomasTheTank::Keys']]],
-  ['num_5f9_12',['NUM_9',['../struct_thomas_the_tank_1_1_keys.html#af756e031ed06abf278a66a8716c556e0',1,'ThomasTheTank::Keys']]]
+  ['num_5f9_12',['NUM_9',['../struct_thomas_the_tank_1_1_keys.html#af756e031ed06abf278a66a8716c556e0',1,'ThomasTheTank::Keys']]],
+  ['num_5fadd_13',['NUM_ADD',['../struct_thomas_the_tank_1_1_keys.html#ac97b305df918aa5405cb8a937810e9ea',1,'ThomasTheTank::Keys']]],
+  ['num_5fdivide_14',['NUM_DIVIDE',['../struct_thomas_the_tank_1_1_keys.html#a16c8445558f9d0045c24379bf9d16a01',1,'ThomasTheTank::Keys']]],
+  ['num_5fdot_15',['NUM_DOT',['../struct_thomas_the_tank_1_1_keys.html#ad9def0531916e621232b3f5791af8dc4',1,'ThomasTheTank::Keys']]],
+  ['num_5fminus_16',['NUM_MINUS',['../struct_thomas_the_tank_1_1_keys.html#a73a70bb450ca2046d62b2d9a0eb4cb12',1,'ThomasTheTank::Keys']]],
+  ['num_5fmultiply_17',['NUM_MULTIPLY',['../struct_thomas_the_tank_1_1_keys.html#a8c902070b93cac40584759632f462b51',1,'ThomasTheTank::Keys']]]
 ];
