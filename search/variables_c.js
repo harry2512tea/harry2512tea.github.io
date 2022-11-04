@@ -16,5 +16,7 @@ var searchData=
   ['m_5ftexture_13',['m_Texture',['../struct_thomas_the_tank_1_1_mesh_renderer.html#ac95eb86a3276ca8273a12729f6664056',1,'ThomasTheTank::MeshRenderer']]],
   ['m_5fwindow_14',['m_window',['../class_thomas_the_tank_1_1_core.html#a004f2e2935ae9001083239940900cf1b',1,'ThomasTheTank::Core']]],
   ['maincam_15',['mainCam',['../struct_thomas_the_tank_1_1_camera.html#a8c28e8ba45bf5eb0bc4c064a38f81c07',1,'ThomasTheTank::Camera']]],
-  ['minus_16',['MINUS',['../struct_thomas_the_tank_1_1_keys.html#abbfd52c217c7e610d389cd6a0a40d147',1,'ThomasTheTank::Keys']]]
+  ['minus_16',['MINUS',['../struct_thomas_the_tank_1_1_keys.html#abbfd52c217c7e610d389cd6a0a40d147',1,'ThomasTheTank::Keys']]],
+  ['mouseinp_17',['mouseInp',['../struct_thomas_the_tank_1_1_input.html#ab79c607f1d7a08f4c9fda605be75f7d6',1,'ThomasTheTank::Input']]],
+  ['mousepos_18',['mousePos',['../struct_thomas_the_tank_1_1_input.html#ab51bf68b2cb6312a947354fd0d8e9089',1,'ThomasTheTank::Input']]]
 ];
