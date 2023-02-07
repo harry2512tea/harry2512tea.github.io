@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tick_0',['tick',['../struct_thomas_the_tank_1_1_component.html#aa456d439c8b88e1c9f322b3bc1a0a718',1,'ThomasTheTank::Component::tick()'],['../class_thomas_the_tank_1_1_entity.html#afc563afc744deaab5bf6996a56ea8452',1,'ThomasTheTank::Entity::tick()'],['../class_thomas_the_tank_1_1_scene_time.html#a0f84765b691301c3d725d25cc34e0195',1,'ThomasTheTank::SceneTime::tick()']]],
-  ['translate_1',['translate',['../struct_thomas_the_tank_1_1_transform.html#a7ca7c5dcbc6a33043d485722973806a5',1,'ThomasTheTank::Transform']]],
-  ['trianglerenderer_2',['TriangleRenderer',['../struct_thomas_the_tank_1_1_triangle_renderer.html#aa0c5bc534ead3897bfd9548cc0063114',1,'ThomasTheTank::TriangleRenderer']]]
+  ['removerigidbody_0',['removeRigidBody',['../struct_thomas_the_tank_1_1_entity.html#a0ef8af5530a26fcf572c06fd7edf595c',1,'ThomasTheTank::Entity']]],
+  ['removerigidbody_1',['RemoveRigidBody',['../struct_thomas_the_tank_1_1_collider.html#a8ef55882690de01844031b6ba662836d',1,'ThomasTheTank::Collider']]],
+  ['rotate_2',['rotate',['../struct_thomas_the_tank_1_1_transform.html#ac69e24a8dd5cd682aad3ab18607a06e6',1,'ThomasTheTank::Transform']]]
 ];

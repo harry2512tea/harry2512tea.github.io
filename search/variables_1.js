@@ -1,9 +1,20 @@
 var searchData=
 [
-  ['b_0',['B',['../struct_thomas_the_tank_1_1_keys.html#aeeb876809b77ad1e76c2432db237aadd',1,'ThomasTheTank::Keys']]],
+  ['b_0',['B',['../structstb__vorbis.html#a2cb73a80f80c0afebdfcddb42b8966fb',1,'stb_vorbis::B()'],['../struct_thomas_the_tank_1_1_keys.html#aeeb876809b77ad1e76c2432db237aadd',1,'ThomasTheTank::Keys::B()']]],
   ['backslash_1',['BACKSLASH',['../struct_thomas_the_tank_1_1_keys.html#ab649ab44b976a53084cd002875013ef2',1,'ThomasTheTank::Keys']]],
   ['backspace_2',['BACKSPACE',['../struct_thomas_the_tank_1_1_keys.html#a8e2db287abe883a3cda70c75df111ff6',1,'ThomasTheTank::Keys']]],
-  ['buttondown_3',['buttonDown',['../struct_thomas_the_tank_1_1_input.html#a4e3c6bc6923416d64e30ea332777281d',1,'ThomasTheTank::Input']]],
-  ['buttons_4',['buttons',['../struct_thomas_the_tank_1_1_input.html#afae94a16ade1b324693f4a2ff4ba134b',1,'ThomasTheTank::Input']]],
-  ['buttonup_5',['buttonUp',['../struct_thomas_the_tank_1_1_input.html#a819940ca37ddae8d9099dbbafc00712d',1,'ThomasTheTank::Input']]]
+  ['bark_5fmap_5fsize_3',['bark_map_size',['../struct_floor0.html#ad25748f935add45259c7739644c3dfde',1,'Floor0']]],
+  ['begin_4',['begin',['../struct_residue.html#ad6316cbcc989ab6c2d85147cc7effeca',1,'Residue']]],
+  ['bit_5freverse_5',['bit_reverse',['../structstb__vorbis.html#a490e29ebd3b1cb5f2966bb255ab05a4a',1,'stb_vorbis']]],
+  ['blockflag_6',['blockflag',['../struct_mode.html#abc3023110a01eb21ac915398246c5868',1,'Mode']]],
+  ['blocksize_7',['blocksize',['../structstb__vorbis.html#a9c3d3e9975770d493662eae1b2e7391a',1,'stb_vorbis']]],
+  ['blocksize_5f0_8',['blocksize_0',['../structstb__vorbis.html#abb2b7e43b5f6b8c8d20f9ac22b4c0892',1,'stb_vorbis']]],
+  ['blocksize_5f1_9',['blocksize_1',['../structstb__vorbis.html#a62e62eea3fc36b1e2bed4e78e1cb7d5d',1,'stb_vorbis']]],
+  ['book_5flist_10',['book_list',['../struct_floor0.html#a15339e5297b60723f7b9cfd796469a76',1,'Floor0']]],
+  ['buttondown_11',['buttonDown',['../struct_thomas_the_tank_1_1_input.html#a4e3c6bc6923416d64e30ea332777281d',1,'ThomasTheTank::Input']]],
+  ['buttons_12',['buttons',['../struct_thomas_the_tank_1_1_input.html#afae94a16ade1b324693f4a2ff4ba134b',1,'ThomasTheTank::Input']]],
+  ['buttonup_13',['buttonUp',['../struct_thomas_the_tank_1_1_input.html#a819940ca37ddae8d9099dbbafc00712d',1,'ThomasTheTank::Input']]],
+  ['bytes_5fdone_14',['bytes_done',['../struct_c_r_cscan.html#a74ee9da9e00c74c1f519d31a2d042457',1,'CRCscan']]],
+  ['bytes_5fin_5fseg_15',['bytes_in_seg',['../structstb__vorbis.html#a5c1b07b922bd3187c184e1fd0a5c02c1',1,'stb_vorbis']]],
+  ['bytes_5fleft_16',['bytes_left',['../struct_c_r_cscan.html#a8cfbc584d3b4344d02e5d64b50447d1e',1,'CRCscan']]]
 ];
